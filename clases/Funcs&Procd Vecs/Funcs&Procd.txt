@@ -1,0 +1,15 @@
+void inicializar  (int vec[], int cantPos,  int valIni);
+
+void mostrar (int vec[], int len);
+
+void insertar (int vec[], int &len, int valor, int pos);
+
+void insertarOrdenado (int vec[], int &len, int valor, int pos);
+
+void cargaMasiva (int vec[], int len, int valor);
+
+int buscar (int vec[], int len, int valor);
+
+void eliminar (int vec[], int &len, int pos);
+
+void carga (int vec[], int len, int cantPos);

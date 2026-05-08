@@ -4,12 +4,12 @@
 #include <iostream>
 using namespace std;
 
-int esBisiesto()
+//int esBisiesto()
 
 int main () {
 
-
-
+    
+    
 
 
 

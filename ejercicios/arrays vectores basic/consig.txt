@@ -1,0 +1,10 @@
+Ejercicios básicos de vectores
+
+1- Generar y completar un vector  con los 100 primeros números enteros y mostrarlos en forma ascendente.
+2- Generar y completar un array con los 100 primeros números enteros y mostrarlos en forma descendente.
+3- Generar y completar un array con los números pares comprendidos entre 1 y 100 y los muestre en pantalla en orden ascendente
+4- Generar y completar un array con los números impares comprendidos entre 1 y 100 y los muestre en pantalla en orden ascendente
+5- Dado 10 números ingresados por teclado, almacenelos en un array y muestre la suma, resta, multiplicación y división de todos.
+6- Leer 10 números por teclado, 5 para un array (A) y 5 para otro array (B). Mostrar los 10 números en pantalla mediante un solo array (C)
+7- Dado un conjunto de valores positivos (no serán más de 10 valores) imprimirlo en orden inverso. Fin de datos: valor negativo.
+8- Leer un conjunto A de valores positivos (finaliza con un valor negativo). Luego leer otro conjunto B de valores positivos (finaliza con un valor negativo). Imprimir los valores del conjunto A que no pertenezcan al conjunto B. Se garantiza que los conjuntos no tendrán más de 10 valores.
