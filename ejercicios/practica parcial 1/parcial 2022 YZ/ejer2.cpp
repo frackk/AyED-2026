@@ -35,11 +35,10 @@ void mayor(int A, int B, int C, int D){
         } else {
             cout << "el numero mayor es: " << D << endl;
         }
-    } else if(C>=A){
-        if(C>=D){
-            cout << "el numero mayor es: " << C << endl;
-        } else {
+    } else if(D>=C){
             cout << "el numero mayor es: " << D << endl;
+        } else {
+            cout << "el numero mayor es: " << C << endl;
         }
     }
 
