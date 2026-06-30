@@ -40,6 +40,4 @@ void mayor(int A, int B, int C, int D){
         } else {
             cout << "el numero mayor es: " << C << endl;
         }
-    }
-
 }
