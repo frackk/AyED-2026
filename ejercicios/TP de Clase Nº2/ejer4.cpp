@@ -1,0 +1,1 @@
+/* 4) Dadas 1 Pila de enteros y 1 Cola de enteros, se pide cargar la UNION ambos en una Lista Ordenada y mostrarla por pantalla.*/

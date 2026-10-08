@@ -1,0 +1,1 @@
+/* 3) Un procedimiento que genere una lista sin orden a partir de la intersección de una lista y un vector.*/

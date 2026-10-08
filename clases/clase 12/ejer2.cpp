@@ -1,0 +1,1 @@
+// incluir todos los elementos de ambas estructuras creadas en el punto 1 en una lista.
