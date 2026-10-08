@@ -260,3 +260,61 @@ Nodo* buscaEInsertaOrdenado(Nodo*& lista, int v, bool& enc){
 	
 	return nodoBuscado;
 }
+
+// Pilas
+Nodo* pila = NULL; // definio el puntero e inicializo
+
+//subprogramas
+void push(Nodo* &pila, int valor){
+	
+	// pedir memoria para crear el nodo
+	Nodo* nuevo = new Nodo();
+
+	// cargar el nodo y este nodo sea parte de la pila
+	nuevo -> info = valor;
+	nuevo -> sgte = pila;
+	pila = nuevo; 
+}
+
+int pop(Nodo* &pila){
+	int ret = pila -> info; // aseguro guardar la variable de retorno
+	Nodo* aux = pila;
+	pila = aux -> sgte; 	// pila = pila -> sgte
+	delete(aux);
+	return ret;
+}
+
+// la pila se carga con un WHILE. pero no se (sofi :3)
+
+// COLAS
+
+// defino la cola -> creo 2 punteros
+Nodo* colaFte = NULL; // defino puntero 1
+Nodo* colaFin = NULL; // defino puntero 2
+
+void agregar(Nodo* &cFte, Nodo* &cFin, int valor){
+	// crear el nodo y cargarlo
+	Nodo* nuevo = new Nodo();
+	nuevo -> info = valor;
+	nuevo -> sgte = NULL;
+	
+	if(cFte == NULL){
+		cFte = nuevo;
+	} else {
+		cFin -> sgte = nuevo;
+	}
+	cFin = nuevo;
+}
+
+int suprimir(Nodo*&colafte, Nodo*&colafin){
+    int ret;
+    ret = colafte -> info;
+    Nodo*aux = colafte;
+    colafte = aux -> sgte; // colafte = colafte -> sgte;
+    
+    if(colafte==NULL){
+        colafin == NULL;
+    }
+    delete(aux);
+    return ret;
+}
