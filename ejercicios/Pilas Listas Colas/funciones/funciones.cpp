@@ -313,7 +313,7 @@ int suprimir(Nodo*&colafte, Nodo*&colafin){
     colafte = aux -> sgte; // colafte = colafte -> sgte;
     
     if(colafte==NULL){
-        colafin == NULL;
+        colafin = NULL;
     }
     delete(aux);
     return ret;

@@ -4,9 +4,9 @@
 using namespace std;
 
 //Vectores
-void agregar(int arr[], int n, int& len, int v){
-	if(len < n){
-		arr[len] = v;
+void agregarVec(int vec[], int capacidad, int& len, int valor){
+	if(len < capacidad){
+		vec[len] = valor;
 		len++;
 	} else {
 		cout << "El vector esta lleno" << endl;
@@ -71,7 +71,7 @@ void insertar(int arr[], int& len, int v, int pos){
 	len++;
 }
 
-int insertarOrdenado(int arr[], int& len, int v){
+int insertarOrdenado2(int arr[], int& len, int v){
 	int i = 0;
 	
 	while(i < len && arr[i] < v ){
@@ -81,6 +81,21 @@ int insertarOrdenado(int arr[], int& len, int v){
 	insertar(arr,len,v,i);
 	
 	return i;
+}
+
+void insertarOrdenado(int vec[], int &len, int valor){
+
+    int i=0;
+    while (i<len && vec[i] <= valor){
+        i++;
+    }
+    if (i==len){
+
+        vec[len]= valor;
+        len ++;
+    } else {
+        insertar(vec,len,valor,i);
+    }
 }
 
 
