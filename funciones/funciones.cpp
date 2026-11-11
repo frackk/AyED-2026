@@ -27,11 +27,11 @@ void inicializar(int arr[],int n){
 	}
 }
 
-int buscar(int arr[], int len, int v){
+int buscar(int vec[], int len, int v){
 	int pos;
 	int i =0;
 	
-	while(i < len && arr[i] != v){
+	while(i < len && vec[i] != v){
 		i++;
 	}
 	
@@ -305,6 +305,8 @@ void agregar(Nodo* &cFte, Nodo* &cFin, int valor){
 	}
 	cFin = nuevo;
 }
+
+
 
 int suprimir(Nodo*&colafte, Nodo*&colafin){
     int ret;

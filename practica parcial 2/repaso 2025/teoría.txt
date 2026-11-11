@@ -1,0 +1,41 @@
+(1) Defina Listas, Pilas y Colas
+    a. Cntidad de punteros
+    b. Tipo de Movimiento
+
+(2) Concepto de Archivos y Vectores
+
+(3) Genere la estructura de un Nodo, que contiene el registro socio con los siguientes campos:
+    a. ID de socio
+    b. Nombre y Apellido
+    c. Fecha de inscripcion
+    d. Categoria
+
+
+
+
+(1) Colas: las Colas tienen un total de 2 punteros, uno apuntando al frente de la cola, y otro al fin de la cola. su tipo de movimiento es FIFO, First In, First Out, eso quiere decir    que el primer dato almacenado en el campo info de la cola es el primero en salir. mantiene orden.
+
+    Pilas: las Pilas tienen un solo puntero, este mismo apunta al ultimo Nodo de la misma, si tipo de movimiento es LIFO, Last In, First Out, eso quiere decir que el último dato almacenado de la pila es el primero en salir. se usa para invertir orden.
+
+    Listas: las Listas tienen un solo puntero, este es de movimiento Libre y se utiliza para diversas tareas.
+
+
+
+(2) noseXD
+
+
+
+(3)
+    struct socio {
+        int id;
+        char nombre[32];
+        char apellido[32];
+        int fecha;
+        char categoria;
+    };
+
+    struct Nodo {
+        socio info;
+        Nodo *sgte;
+    };
+    
